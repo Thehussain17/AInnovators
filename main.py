@@ -357,7 +357,7 @@ def generate_upload():
             f"-{numerical_questions} Numerical Questions to assess the problem solving abilities of the students.\n\n"
             f"All questions must be at a '{difficulty_level}' difficulty level relative to the source material's complexity.\n"
             f"Format the output clearly using Markdown:\n"
-            f"## Multiple Choice Questions\n1. [Question text]...\nA. [Option]\nB. [Option]\nC. [Option]\nD. [Option]\n"
+            f"## Multiple Choice Questions\n1. [Question text]...\nA. [Option]\nB. [Option]\nC. [Option]\nD. [Option]\n "
             f"## Short Answer Questions\n1. [Question text]...\n\n"
             f"## Long Answer Questions\n1. [Question text]...\n\n"
             f"## Numerical Questions\n1. [Question text]...\n\n"
@@ -667,6 +667,7 @@ def evaluate_upload():
             "-   **Overall Feedback:** Summarize the student's performance, highlighting strengths and key areas for improvement.\n\n"
             "Use Markdown for clear formatting (headings, bullet points).\n\n"
             "**IMPORTANT:** Base your entire evaluation *only* on the provided source documents. Do not use external knowledge. The source documents are provided first, followed by the answer sheet documents."
+            "If no answer document is provided, simply state that no answer sheet was provided and display the correct answers for all the questions.\n\n"
         )
 
         # --- Call Gemini API for Evaluation (NEW SDK - client.models.generate_content) ---
