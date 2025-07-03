@@ -1,5 +1,7 @@
 Flask
 google
+google-genai
+Flask-Session
 python-dotenv  # To load environment variables from .env
 python-docx    # For creating DOCX files
 fpdf2          # For creating PDF files
